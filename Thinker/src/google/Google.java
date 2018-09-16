@@ -17,7 +17,7 @@ public class Google {
 	private static Google Instance;
 
 	// Final variables
-	private final String API_KEY = "AIzaSyAe4p6dRYNbS1UG_u-g0vIO8w4Kdd_-w14";
+	private final String API_KEY = "API_KEY";
 	private final String GOOGLE_API_URL = "https://www.googleapis.com/customsearch/v1?key=%s&cx=013036536707430787589:_pqjad5hr1a&q=%s&alt=json&lr=lang_iw";
 	public static final String CHARSET = "UTF-8";
 	
