@@ -10,5 +10,7 @@
 	<classpathentry kind="lib" path="src/libs/javaocr-plugin-morphology-1.0.jar"/>
 	<classpathentry kind="lib" path="src/libs/gson-2.1.jar"/>
 	<classpathentry kind="lib" path="src/libs/jsr305-3.0.2.jar"/>
+	<classpathentry kind="lib" path="src/libs/jsoup-1.11.3.jar"/>
+	<classpathentry kind="lib" path="src/libs/junit-4.10.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

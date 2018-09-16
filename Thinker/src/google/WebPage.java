@@ -1,5 +1,7 @@
 package google;
 
+import org.jsoup.Jsoup;
+
 public class WebPage {
 	private String url;
 	private String title;
@@ -7,7 +9,7 @@ public class WebPage {
 
 	// Constructors
 	public WebPage(String siteData){
-		this.siteData = siteData;
+		this.siteData = Jsoup.parse(siteData).text();	
 	}
 	public WebPage(String url, String title, String siteData){
 		this(siteData);
@@ -57,7 +59,7 @@ public class WebPage {
 	}
 	
 	public boolean isWordCloseToPosition(String word, int position){
-		final int lengthFromWord = 15;
+		final int lengthFromWord = 25;
 		//TODO: check bounds
 		int lowerBound = position - lengthFromWord;
 		int upperBound = position + word.length() + lengthFromWord;

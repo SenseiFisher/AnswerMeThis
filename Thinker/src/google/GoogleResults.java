@@ -48,6 +48,7 @@ public class GoogleResults {
 		char[] chars = new char[100];
 		do{
 		    charsRead = reader.read(chars,0,chars.length);
+
 		    //if we have valid chars, append them to end of string.
 		    if(charsRead>0)
 		        builder.append(chars,0,charsRead);
