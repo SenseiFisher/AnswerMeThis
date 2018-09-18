@@ -5,8 +5,10 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.URL;
 
+import main.EnvironmentConstansts;
+
 public class GoogleResults {
-	private String formattedUrl;
+	private String link;
 	private String title;
 	private String snippet; 
 
@@ -19,7 +21,7 @@ public class GoogleResults {
 	}
 
 	public String getFormattedUrl() {
-		return formattedUrl;
+		return link;
 	}
 
 	public String getTitle() {
@@ -27,7 +29,7 @@ public class GoogleResults {
 	}
 
 	public void setFormattedUrl(String formattedUrl) {
-		this.formattedUrl = formattedUrl;
+		this.link = formattedUrl;
 	}
 
 	public void setTitle(String title) {
@@ -35,10 +37,10 @@ public class GoogleResults {
 	}
 	
 	public WebPage enter() throws IOException{
-        URL url = new URL(formattedUrl);
-		Reader reader = new InputStreamReader(url.openStream(), Google.CHARSET);
+        URL url = new URL(link);
+		Reader reader = new InputStreamReader(url.openStream(), EnvironmentConstansts.CHARSET);
 		String siteData = readerToString(reader);
-		return new WebPage(formattedUrl, title, siteData);
+		return new WebPage(link, title, siteData);
 	}
 	
 	public String readerToString(Reader reader) throws IOException{
@@ -58,6 +60,6 @@ public class GoogleResults {
 	
 	@Override
 	public String toString() {
-		return "Result[url:" + formattedUrl + ",title:" + title + ",snippet:" + snippet + "]";
+		return "Result[url:" + link + ",title:" + title + ",snippet:" + snippet + "]";
 	}
 }

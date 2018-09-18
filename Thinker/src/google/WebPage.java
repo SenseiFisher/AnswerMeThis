@@ -38,9 +38,14 @@ public class WebPage {
 		this.siteData = siteData;
 	}
 		
-	public WebPageSearchResults search(String... searchStrings){
+	public WebPageSearchResults search(boolean searchForWords, String... searchStrings){
 		WebPageSearchResults results = new WebPageSearchResults();
-		for (String searchString : searchStrings) {
+		for (String originalSearchString : searchStrings) { 
+			String searchString = originalSearchString;
+			if(searchForWords){
+				searchString = " " + originalSearchString + " ";
+			}
+			
 			int currIndex = 0;
 			for (int i = 0; i < siteData.length(); i++) {
 				if (siteData.charAt(i) == searchString.charAt(currIndex)) {
@@ -50,7 +55,7 @@ public class WebPage {
 					currIndex = 0;
 				}
 				if (currIndex == searchString.length()) {
-					results.addResult(searchString, i - searchString.length());
+					results.addResult(originalSearchString, i - originalSearchString.length());
 					currIndex = 0;
 				}
 			}
@@ -59,10 +64,21 @@ public class WebPage {
 	}
 	
 	public boolean isWordCloseToPosition(String word, int position){
+		// Define what 'close' means
 		final int lengthFromWord = 25;
-		//TODO: check bounds
+		
+		// Get bounds to search between them
 		int lowerBound = position - lengthFromWord;
 		int upperBound = position + word.length() + lengthFromWord;
+		
+		// Check bounds
+		if(lowerBound < 0){
+			lowerBound = 0;
+		}
+		if(upperBound >= siteData.length()){
+			upperBound = siteData.length() - 1;
+		}
+		
 		return siteData.substring(lowerBound, upperBound).contains(word);
 	}
 	

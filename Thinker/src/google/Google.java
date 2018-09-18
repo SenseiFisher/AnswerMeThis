@@ -12,14 +12,15 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonStreamParser;
 
+import main.EnvironmentConstansts;
+
 public class Google {
 	// Singleton Instance
 	private static Google Instance;
 
 	// Final variables
-	private final String API_KEY = "API_KEY";
+	private final String API_KEY = EnvironmentConstansts.GOOGLE_API_KEY;
 	private final String GOOGLE_API_URL = "https://www.googleapis.com/customsearch/v1?key=%s&cx=013036536707430787589:_pqjad5hr1a&q=%s&alt=json&lr=lang_iw";
-	public static final String CHARSET = "UTF-8";
 	
 	// Custom variables
 	private String _lastSearchString;
@@ -43,9 +44,9 @@ public class Google {
 		// Nullify the search results in case the search will fail
 		_searchResults = null;
 		_lastSearchString = searchString;
-		String formattedSearchString = URLEncoder.encode(searchString.replace(" ", "+"), CHARSET);
+		String formattedSearchString = URLEncoder.encode(searchString.replace(" ", "+"), EnvironmentConstansts.CHARSET);
 		URL url = new URL(String.format(GOOGLE_API_URL, API_KEY, formattedSearchString));
-		Reader reader = new InputStreamReader(url.openStream(), CHARSET);
+		Reader reader = new InputStreamReader(url.openStream(), EnvironmentConstansts.CHARSET);
 		JsonStreamParser jsonReader = new JsonStreamParser(reader);
 		JsonArray foundItems = jsonReader.next().getAsJsonObject().getAsJsonArray("items");
 		

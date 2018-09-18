@@ -2,12 +2,21 @@ package google;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Set;
 
 public class WebPageSearchResults {
 	private HashMap<String, ArrayList<Integer>> results;
 	
 	public WebPageSearchResults(){
 		results = new HashMap<String, ArrayList<Integer>>();
+	}
+	
+	public void mergeSearchResults(WebPageSearchResults results){
+		for (String word : results.getSearchedWords()) {
+			for (Integer position : results.getOccurrences(word)) {
+				this.addResult(word, position);				
+			}
+		}
 	}
 	
 	public void addResult(String searchString, Integer position){
@@ -22,5 +31,9 @@ public class WebPageSearchResults {
 			stringOccurrences = new ArrayList<Integer>();
 		}
 		return stringOccurrences;
+	}
+	
+	public Set<String> getSearchedWords(){
+		return results.keySet();
 	}
 }
