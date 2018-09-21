@@ -3,11 +3,13 @@ package google;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLConnection;
 
 import main.EnvironmentConstansts;
 
-public class GoogleResults {
+public class GoogleResult {
 	private String link;
 	private String title;
 	private String snippet; 
@@ -20,7 +22,7 @@ public class GoogleResults {
 		this.snippet = snippet;
 	}
 
-	public String getFormattedUrl() {
+	public String getLink() {
 		return link;
 	}
 
@@ -28,8 +30,8 @@ public class GoogleResults {
 		return title;
 	}
 
-	public void setFormattedUrl(String formattedUrl) {
-		this.link = formattedUrl;
+	public void setLink(String link) {
+		this.link = link;
 	}
 
 	public void setTitle(String title) {
@@ -38,6 +40,10 @@ public class GoogleResults {
 	
 	public WebPage enter() throws IOException{
         URL url = new URL(link);
+        int pageSize = getFileSize(url);
+        if(pageSize > 10_000_000){
+        	throw new IOException("Can't Read large file");
+        }
 		Reader reader = new InputStreamReader(url.openStream(), EnvironmentConstansts.CHARSET);
 		String siteData = readerToString(reader);
 		return new WebPage(link, title, siteData);
@@ -56,6 +62,22 @@ public class GoogleResults {
 		        builder.append(chars,0,charsRead);
 		}while(charsRead>0);
 		return builder.toString();
+	}
+	
+	private static int getFileSize(URL url) throws IOException {
+	    URLConnection conn = null;
+	    try {
+	        conn = url.openConnection();
+	        if(conn instanceof HttpURLConnection) {
+	            ((HttpURLConnection)conn).setRequestMethod("HEAD");
+	        }
+	        conn.getInputStream();
+	        return conn.getContentLength();
+	    } finally {
+	        if(conn instanceof HttpURLConnection) {
+	            ((HttpURLConnection)conn).disconnect();
+	        }
+	    }
 	}
 	
 	@Override

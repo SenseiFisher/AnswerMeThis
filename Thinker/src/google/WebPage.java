@@ -55,7 +55,7 @@ public class WebPage {
 					currIndex = 0;
 				}
 				if (currIndex == searchString.length()) {
-					results.addResult(originalSearchString, i - originalSearchString.length());
+					results.addResult(originalSearchString, i - originalSearchString.length() + 1);
 					currIndex = 0;
 				}
 			}
@@ -80,6 +80,21 @@ public class WebPage {
 		}
 		
 		return siteData.substring(lowerBound, upperBound).contains(word);
+	}
+	
+	public String[] getWordsBetween(int start, int end){
+		int startBorder = Math.max(start, 0);
+		int endBorder = Math.min(end, siteData.length());
+		
+		// Expand borders to give a full word
+		while(startBorder >= 0 && siteData.charAt(startBorder) != ' ') { startBorder--; }
+		while(endBorder < siteData.length() && siteData.charAt(endBorder) != ' ') { endBorder++; }
+		
+		// Current char is now equals to SPACE
+		startBorder++;
+		endBorder--;
+		
+		return siteData.substring(startBorder, endBorder).split(" ");
 	}
 	
 	public String getWordAtPosition(int position){
