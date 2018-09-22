@@ -2,12 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="src/libs/javaocr-core-1.0.jar"/>
-	<classpathentry kind="lib" path="src/libs/javaocr-plugin-awt-1.0.jar"/>
-	<classpathentry kind="lib" path="src/libs/javaocr-plugin-cluster-1.0.jar"/>
-	<classpathentry kind="lib" path="src/libs/javaocr-plugin-fir-1.0.jar"/>
-	<classpathentry kind="lib" path="src/libs/javaocr-plugin-moment-1.0.jar"/>
-	<classpathentry kind="lib" path="src/libs/javaocr-plugin-morphology-1.0.jar"/>
 	<classpathentry kind="lib" path="src/libs/gson-2.1.jar"/>
 	<classpathentry kind="lib" path="src/libs/jsr305-3.0.2.jar"/>
 	<classpathentry kind="lib" path="src/libs/jsoup-1.11.3.jar"/>

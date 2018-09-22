@@ -8,9 +8,9 @@ public class Tests {
 
 	@Test
 	public void question1() {
-		String question = "ξι διδ ψξθλ\"μ φδ\"μ ελαω ΰϊ ιψεωμιν αξμηξϊ ωωϊ διξιν";
-		String[] answers = { "ξπην αβιο", "ξωδ γιιο", "ιφηχ ψαιο" };
-		String correctAnswer = "ιφηχ ψαιο";
+		String question = "ΧΧ™ Χ”Χ™Χ” Χ¨ΧΧΧ›\"Χ Χ¦Χ”\"Χ Χ•Χ›Χ‘Χ© ΧΧª Χ™Χ¨Χ•Χ©ΧΧ™Χ Χ‘ΧΧΧ—ΧΧª Χ©Χ©Χª Χ”Χ™ΧΧ™Χ";
+		String[] answers = { "ΧΧ Χ—Χ Χ‘Χ’Χ™Χ", "ΧΧ©Χ” Χ“Χ™Χ™Χ", "Χ™Χ¦Χ—Χ§ Χ¨Χ‘Χ™Χ" };
+		String correctAnswer = "Χ™Χ¦Χ—Χ§ Χ¨Χ‘Χ™Χ";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
@@ -18,34 +18,34 @@ public class Tests {
 	
 	@Test
 	public void question2() {
-		String question = "ΰιζδ ξΰλμ μΰ δεξφΰ αιωψΰμ";
-		String[] answers = {"αξαδ", "τϊιϊιν", "χψξαε"};
-		String correctAnswer = "χψξαε";
+		String question = "ΧΧ™Χ–Χ” ΧΧΧ›Χ ΧΧ Χ”Χ•ΧΧ¦Χ Χ‘Χ™Χ©Χ¨ΧΧ";
+		String[] answers = {"Χ‘ΧΧ‘Χ”", "Χ¤ΧªΧ™ΧªΧ™Χ", "Χ§Χ¨ΧΧ‘Χ•"};
+		String correctAnswer = "Χ§Χ¨ΧΧ‘Χ•";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question3() {
-		String question = "ξι ψΰω δξξωμδ δπεληι?";
-		String[] answers = {"απιξιο πϊπιδε", "ξωδ τψυ", "ιφηχ ψαιο"};
-		String correctAnswer = "απιξιο πϊπιδε";
+		String question = "ΧΧ™ Χ¨ΧΧ© Χ”ΧΧΧ©ΧΧ” Χ”Χ Χ•Χ›Χ—Χ™?";
+		String[] answers = {"Χ‘Χ Χ™ΧΧ™Χ Χ ΧªΧ Χ™Χ”Χ•", "ΧΧ©Χ” Χ¤Χ¨Χ¥", "Χ™Χ¦Χ—Χ§ Χ¨Χ‘Χ™Χ"};
+		String correctAnswer = "Χ‘Χ Χ™ΧΧ™Χ Χ ΧªΧ Χ™Χ”Χ•";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question4() {
-		String question = "πλεο μ-2017, αΰιζε ςιψ ιω δλι δψαδ ξρςγεϊ ςν λελαι ξιωμο";
-		String[] answers = {"θεχιε", "ψεξΰ", "πιε-ιεψχ", "τψιρ"};
-		String correctAnswer = "θεχιε";
+		String question = "Χ Χ›Χ•Χ Χ-2017, Χ‘ΧΧ™Χ–Χ• ΧΆΧ™Χ¨ Χ™Χ© Χ”Χ›Χ™ Χ”Χ¨Χ‘Χ” ΧΧ΅ΧΆΧ“Χ•Χª ΧΆΧ Χ›Χ•Χ›Χ‘Χ™ ΧΧ™Χ©ΧΧ";
+		String[] answers = {"ΧΧ•Χ§Χ™Χ•", "Χ¨Χ•ΧΧ", "Χ Χ™Χ•-Χ™Χ•Χ¨Χ§", "Χ¤Χ¨Χ™Χ΅"};
+		String correctAnswer = "ΧΧ•Χ§Χ™Χ•";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question5() {
-		String question = "αξδμκ ξηζεψ ωμ 19 ωπιν, λξδ τςξιν ξϊψηωϊ ωπδ ξςεαψϊ?";
+		String question = "Χ‘ΧΧ”ΧΧ ΧΧ—Χ–Χ•Χ¨ Χ©Χ 19 Χ©Χ Χ™Χ, Χ›ΧΧ” Χ¤ΧΆΧΧ™Χ ΧΧªΧ¨Χ—Χ©Χª Χ©Χ Χ” ΧΧΆΧ•Χ‘Χ¨Χª?";
 		String[] answers = {"3", "5", "7", "9"};
 		String correctAnswer = "7";
 		
@@ -54,153 +54,153 @@ public class Tests {
 	
 	@Test
 	public void question6() {
-		String question = "ΰπι ψεφδ μθερ ξψεξπιδ ιωιψεϊ μιωψΰμ, μΰιζε ηαψϊ ϊςετδ ςμι μδϊχωψ?";
-		String[] answers = {"θΰψεν", "ξΰμα", "ΰιψετμεθ"};
-		String correctAnswer = "θΰψεν";
+		String question = "ΧΧ Χ™ Χ¨Χ•Χ¦Χ” ΧΧΧ•Χ΅ ΧΧ¨Χ•ΧΧ Χ™Χ” Χ™Χ©Χ™Χ¨Χ•Χª ΧΧ™Χ©Χ¨ΧΧ, ΧΧΧ™Χ–Χ• Χ—Χ‘Χ¨Χª ΧªΧΆΧ•Χ¤Χ” ΧΆΧΧ™ ΧΧ”ΧªΧ§Χ©Χ¨?";
+		String[] answers = {"ΧΧΧ¨Χ•Χ", "ΧΧΧΧ‘", "ΧΧ™Χ¨Χ•Χ¤ΧΧ•Χ"};
+		String correctAnswer = "ΧΧΧ¨Χ•Χ";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question7() {
-		String question = "ΰν φαςϊι ΰϊ δχιψ αρμεο αΰιπγιβε. λπψΰδ ωδχιψ ωμι...?";
-		String[] answers = {"ιψεχ φδαδα", "ΰγεν λϊξϊν", "ληεμ ρβμβμ"};
-		String correctAnswer = "ληεμ ρβμβμ";
+		String question = "ΧΧ Χ¦Χ‘ΧΆΧªΧ™ ΧΧª Χ”Χ§Χ™Χ¨ Χ‘Χ΅ΧΧ•Χ Χ‘ΧΧ™Χ Χ“Χ™Χ’Χ•. Χ›Χ Χ¨ΧΧ” Χ©Χ”Χ§Χ™Χ¨ Χ©ΧΧ™...?";
+		String[] answers = {"Χ™Χ¨Χ•Χ§ Χ¦Χ”Χ‘Χ”Χ‘", "ΧΧ“Χ•Χ Χ›ΧªΧΧªΧ", "Χ›Χ—Χ•Χ Χ΅Χ’ΧΧ’Χ"};
+		String correctAnswer = "Χ›Χ—Χ•Χ Χ΅Χ’ΧΧ’Χ";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question8() {
-		String question = "ΰιζδ βεσ ξτψρν αλμ ηεγω ΰϊ ξγγ δξηιψιν μφψλο?";
-		String[] answers = {"ξωψγ δΰεφψ", "απχ ιωψΰμ", "δμξ\"ρ"};
-		String correctAnswer = "δμξ\"ρ";
+		String question = "ΧΧ™Χ–Χ” Χ’Χ•Χ£ ΧΧ¤Χ¨Χ΅Χ Χ‘Χ›Χ Χ—Χ•Χ“Χ© ΧΧª ΧΧ“Χ“ Χ”ΧΧ—Χ™Χ¨Χ™Χ ΧΧ¦Χ¨Χ›Χ?";
+		String[] answers = {"ΧΧ©Χ¨Χ“ Χ”ΧΧ•Χ¦Χ¨", "Χ‘Χ Χ§ Χ™Χ©Χ¨ΧΧ", "Χ”ΧΧ\"Χ΅"};
+		String correctAnswer = "Χ”ΧΧ\"Χ΅";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question9() {
-		String question = "\"θμ δγαω\" δεΰ ων ζο ωμ...?";
-		String[] answers = {"τριτμεψδ", "ξμεο", "ξπβε"};
-		String correctAnswer = "ξμεο";
+		String question = "\"ΧΧ Χ”Χ“Χ‘Χ©\" Χ”Χ•Χ Χ©Χ Χ–Χ Χ©Χ...?";
+		String[] answers = {"Χ¤Χ΅Χ™Χ¤ΧΧ•Χ¨Χ”", "ΧΧΧ•Χ", "ΧΧ Χ’Χ•"};
+		String correctAnswer = "ΧΧΧ•Χ";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question10() {
-		String question = "μτι δτρεχ \"απτμ ΰειαικ ΰμ ϊωξη εαλωμε ΰμ...\"";
-		String[] answers = {"ιφδμ τικ", "ιφηχ χδμκ", "ιβμ μακ"};
-		String correctAnswer = "ιβμ μακ";
+		String question = "ΧΧ¤Χ™ Χ”Χ¤Χ΅Χ•Χ§ \"Χ‘Χ Χ¤Χ ΧΧ•Χ™Χ‘Χ™Χ ΧΧ ΧªΧ©ΧΧ— Χ•Χ‘Χ›Χ©ΧΧ• ΧΧ...\"";
+		String[] answers = {"Χ™Χ¦Χ”Χ Χ¤Χ™Χ", "Χ™Χ¦Χ—Χ§ Χ§Χ”ΧΧ", "Χ™Χ’Χ ΧΧ‘Χ"};
+		String correctAnswer = "Χ™Χ’Χ ΧΧ‘Χ";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question11() {
-		String question = "ςαγε ςμικ αξλεμϊ εχιαμϊ ωθψ ιωο ωςμιε γξεϊε ωμ ηιιν ειφξο. αΰιζδ ςψκ δωθψ?";
-		String[] answers = {"500 μιψεϊ", "100 μιψεϊ", "50 μιψεϊ"};
-		String correctAnswer = "50 μιψεϊ";
+		String question = "ΧΆΧ‘Χ“Χ• ΧΆΧΧ™Χ Χ‘ΧΧ›Χ•ΧΧª Χ•Χ§Χ™Χ‘ΧΧª Χ©ΧΧ¨ Χ™Χ©Χ Χ©ΧΆΧΧ™Χ• Χ“ΧΧ•ΧªΧ• Χ©Χ Χ—Χ™Χ™Χ Χ•Χ™Χ¦ΧΧ. Χ‘ΧΧ™Χ–Χ” ΧΆΧ¨Χ Χ”Χ©ΧΧ¨?";
+		String[] answers = {"500 ΧΧ™Χ¨Χ•Χª", "100 ΧΧ™Χ¨Χ•Χª", "50 ΧΧ™Χ¨Χ•Χª"};
+		String correctAnswer = "50 ΧΧ™Χ¨Χ•Χª";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question12() {
-		String question = "ξιδε δωηχο δψΰωεο, ωωξεπδ ρψθιν ωμε αψφιτεϊ δλπιρε ιεϊψ ξ-100 ξιμιεο γεμψ αΰψδ\"α αμαγ?";
-		String[] answers = {"δψιρεο τεψγ", "αψΰγ τιθ", "ΰψπεμγ ωεεψφπβψ", "εειμ ρξιϊ"};
-		String correctAnswer = "εειμ ρξιϊ";
+		String question = "ΧΧ™Χ”Χ• Χ”Χ©Χ—Χ§Χ Χ”Χ¨ΧΧ©Χ•Χ, Χ©Χ©ΧΧ•Χ Χ” Χ΅Χ¨ΧΧ™Χ Χ©ΧΧ• Χ‘Χ¨Χ¦Χ™Χ¤Χ•Χª Χ”Χ›Χ Χ™Χ΅Χ• Χ™Χ•ΧªΧ¨ Χ-100 ΧΧ™ΧΧ™Χ•Χ Χ“Χ•ΧΧ¨ Χ‘ΧΧ¨Χ”\"Χ‘ Χ‘ΧΧ‘Χ“?";
+		String[] answers = {"Χ”Χ¨Χ™Χ΅Χ•Χ Χ¤Χ•Χ¨Χ“", "Χ‘Χ¨ΧΧ“ Χ¤Χ™Χ", "ΧΧ¨Χ Χ•ΧΧ“ Χ©Χ•Χ•Χ¨Χ¦Χ Χ’Χ¨", "Χ•Χ•Χ™Χ Χ΅ΧΧ™Χª"};
+		String correctAnswer = "Χ•Χ•Χ™Χ Χ΅ΧΧ™Χª";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question13() {
-		String question = "ςμ τι δχαμδ ξι ΰξεψιν μδβις αξδμκ δηβ μαχψ αρελδ?";
-		String[] answers = {"δρψιριν", "δΰεωτιζιο", "δΰηωγψτπιν"};
-		String correctAnswer = "δΰεωτιζιο";
+		String question = "ΧΆΧ Χ¤Χ™ Χ”Χ§Χ‘ΧΧ” ΧΧ™ ΧΧΧ•Χ¨Χ™Χ ΧΧ”Χ’Χ™ΧΆ Χ‘ΧΧ”ΧΧ Χ”Χ—Χ’ ΧΧ‘Χ§Χ¨ Χ‘Χ΅Χ•Χ›Χ”?";
+		String[] answers = {"Χ”Χ΅Χ¨Χ™Χ΅Χ™Χ", "Χ”ΧΧ•Χ©Χ¤Χ™Χ–Χ™Χ", "Χ”ΧΧ—Χ©Χ“Χ¨Χ¤Χ Χ™Χ"};
+		String correctAnswer = "Χ”ΧΧ•Χ©Χ¤Χ™Χ–Χ™Χ";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question14() {
-		String question = "ΰϊ ξι μΰ ραιψ ωΰζξιο μδετις αιεξεμγϊ ωμ δαϊ ωμι?";
-		String[] answers = {"ραϊΰ ζτθδ", "γεγ ηιιν", "ξιλμ δχθπδ"};
-		String correctAnswer = "ραϊΰ ζτθδ";
+		String question = "ΧΧª ΧΧ™ ΧΧ Χ΅Χ‘Χ™Χ¨ Χ©ΧΧ–ΧΧ™Χ ΧΧ”Χ•Χ¤Χ™ΧΆ Χ‘Χ™Χ•ΧΧ•ΧΧ“Χª Χ©Χ Χ”Χ‘Χª Χ©ΧΧ™?";
+		String[] answers = {"Χ΅Χ‘ΧªΧ Χ–Χ¤ΧΧ”", "Χ“Χ•Χ“ Χ—Χ™Χ™Χ", "ΧΧ™Χ›Χ Χ”Χ§ΧΧ Χ”"};
+		String correctAnswer = "Χ΅Χ‘ΧªΧ Χ–Χ¤ΧΧ”";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question15() {
-		String question = "αΰιζε ξγιπδ τςμ εδϊτψρν γπι δΰγεν";
-		String[] answers = {"φψτϊ", "ΰιθμιδ", "δεμπγ", "αμβιδ"};
-		String correctAnswer = "φψτϊ";
+		String question = "Χ‘ΧΧ™Χ–Χ• ΧΧ“Χ™Χ Χ” Χ¤ΧΆΧ Χ•Χ”ΧªΧ¤Χ¨Χ΅Χ Χ“Χ Χ™ Χ”ΧΧ“Χ•Χ";
+		String[] answers = {"Χ¦Χ¨Χ¤Χª", "ΧΧ™ΧΧΧ™Χ”", "Χ”Χ•ΧΧ Χ“", "Χ‘ΧΧ’Χ™Χ”"};
+		String correctAnswer = "Χ¦Χ¨Χ¤Χª";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question16() {
-		String question = "ξι ξδμδιθιν ωμ ρθθιχ εαο ΰμ ιφΰ ξεχγν ιεϊψ?";
-		String[] answers = {"ρμρεμιν", "αψαι", "λαιω δηεσ"};
-		String correctAnswer = "αψαι";
+		String question = "ΧΧ™ ΧΧ”ΧΧ”Χ™ΧΧ™Χ Χ©Χ Χ΅ΧΧΧ™Χ§ Χ•Χ‘Χ ΧΧ Χ™Χ¦Χ ΧΧ•Χ§Χ“Χ Χ™Χ•ΧªΧ¨?";
+		String[] answers = {"Χ΅ΧΧ΅Χ•ΧΧ™Χ", "Χ‘Χ¨Χ‘Χ™", "Χ›Χ‘Χ™Χ© Χ”Χ—Χ•Χ£"};
+		String correctAnswer = "Χ‘Χ¨Χ‘Χ™";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question17() {
-		String question = "μΰιζδ ηαμ αρτψγ ωιιλϊ δςιψ ρο ραρθιΰο?";
-		String[] answers = {"δαρχιν", "βμιριδ", "ΰπγμεριδ", "χθμεπιδ"};
-		String correctAnswer = "δαρχιν";
+		String question = "ΧΧΧ™Χ–Χ” Χ—Χ‘Χ Χ‘Χ΅Χ¤Χ¨Χ“ Χ©Χ™Χ™Χ›Χª Χ”ΧΆΧ™Χ¨ Χ΅Χ Χ΅Χ‘Χ΅ΧΧ™ΧΧ?";
+		String[] answers = {"Χ”Χ‘Χ΅Χ§Χ™Χ", "Χ’ΧΧ™Χ΅Χ™Χ”", "ΧΧ Χ“ΧΧ•Χ΅Χ™Χ”", "Χ§ΧΧΧ•Χ Χ™Χ”"};
+		String correctAnswer = "Χ”Χ‘Χ΅Χ§Χ™Χ";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question18() {
-		String question = "ξι ξαιο δξμηιπιν δχμΰριιν δαΰιν ξϊ φςιψ ιεϊψ?";
-		String[] answers = {"ωεαψθ", "ξεφΰψθ", "αΰκ"};
-		String correctAnswer = "ωεαψθ";
+		String question = "ΧΧ™ ΧΧ‘Χ™Χ Χ”ΧΧΧ—Χ™Χ Χ™Χ Χ”Χ§ΧΧΧ΅Χ™Χ™Χ Χ”Χ‘ΧΧ™Χ ΧΧª Χ¦ΧΆΧ™Χ¨ Χ™Χ•ΧªΧ¨?";
+		String[] answers = {"Χ©Χ•Χ‘Χ¨Χ", "ΧΧ•Χ¦ΧΧ¨Χ", "Χ‘ΧΧ"};
+		String correctAnswer = "Χ©Χ•Χ‘Χ¨Χ";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question19() {
-		String question = "μξι ξδζξψιν δαΰιν διε ιεϊψ ωιψιν ωπλπρε μξφςγ δαιμαεψγ δεθ 100?";
-		String[] answers = {"ξιιχμ β\'χρεο", "ξγεπδ", "ΰμαιρ τψρμι", "ειθπι ιερθεο"};
-		String correctAnswer = "ΰμαιρ τψρμι";
+		String question = "ΧΧΧ™ ΧΧ”Χ–ΧΧ¨Χ™Χ Χ”Χ‘ΧΧ™Χ Χ”Χ™Χ• Χ™Χ•ΧªΧ¨ Χ©Χ™Χ¨Χ™Χ Χ©Χ Χ›Χ Χ΅Χ• ΧΧΧ¦ΧΆΧ“ Χ”Χ‘Χ™ΧΧ‘Χ•Χ¨Χ“ Χ”Χ•Χ 100?";
+		String[] answers = {"ΧΧ™Χ™Χ§Χ Χ’\'Χ§Χ΅Χ•Χ", "ΧΧ“Χ•Χ Χ”", "ΧΧΧ‘Χ™Χ΅ Χ¤Χ¨Χ΅ΧΧ™", "Χ•Χ™ΧΧ Χ™ Χ™Χ•Χ΅ΧΧ•Χ"};
+		String correctAnswer = "ΧΧΧ‘Χ™Χ΅ Χ¤Χ¨Χ΅ΧΧ™";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question20() {
-		String question = "ςμ τι δτρεχ ξδδβγδ: λμ δξψαδ μρτψ αιφιΰϊ ξφψιν δψι ζδ...?";
-		String[] answers = {"ξρεακ", "ξγεεη", "ξωεαη"};
-		String correctAnswer = "ξωεαη";
+		String question = "ΧΆΧ Χ¤Χ™ Χ”Χ¤Χ΅Χ•Χ§ ΧΧ”Χ”Χ’Χ“Χ”: Χ›Χ Χ”ΧΧ¨Χ‘Χ” ΧΧ΅Χ¤Χ¨ Χ‘Χ™Χ¦Χ™ΧΧª ΧΧ¦Χ¨Χ™Χ Χ”Χ¨Χ™ Χ–Χ”...?";
+		String[] answers = {"ΧΧ΅Χ•Χ‘Χ", "ΧΧ“Χ•Χ•Χ—", "ΧΧ©Χ•Χ‘Χ—"};
+		String correctAnswer = "ΧΧ©Χ•Χ‘Χ—";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question21() {
-		String question = "μΰο ςμι μπρες λγι μψΰεϊ ΰϊ ρμς δΰεμεψε δξλεπδ βν δΰιιψρ ψεχ?";
-		String[] answers = {"χπγδ", "ΰερθψμιδ", "ιτο"};
-		String correctAnswer = "ΰερθψμιδ";
+		String question = "ΧΧΧ ΧΆΧΧ™ ΧΧ Χ΅Χ•ΧΆ Χ›Χ“Χ™ ΧΧ¨ΧΧ•Χª ΧΧª Χ΅ΧΧΆ Χ”ΧΧ•ΧΧ•Χ¨Χ• Χ”ΧΧ›Χ•Χ Χ” Χ’Χ Χ”ΧΧ™Χ™Χ¨Χ΅ Χ¨Χ•Χ§?";
+		String[] answers = {"Χ§Χ Χ“Χ”", "ΧΧ•Χ΅ΧΧ¨ΧΧ™Χ”", "Χ™Χ¤Χ"};
+		String correctAnswer = "ΧΧ•Χ΅ΧΧ¨ΧΧ™Χ”";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
 	
 	@Test
 	public void question22() {
-		String question = "αΰιζε ξγιπδ ΰηεζ δβ\'ιπβ\'ιν αΰελμεριδ βαεδ ιεϊψ?";
-		String[] answers = {"ΰιψμπγ", "βψιπμπγ", "ΰιρμπγ"};
-		String correctAnswer = "ΰιψμπγ";
+		String question = "Χ‘ΧΧ™Χ–Χ• ΧΧ“Χ™Χ Χ” ΧΧ—Χ•Χ– Χ”Χ’\'Χ™Χ Χ’\'Χ™Χ Χ‘ΧΧ•Χ›ΧΧ•Χ΅Χ™Χ” Χ’Χ‘Χ•Χ” Χ™Χ•ΧªΧ¨?";
+		String[] answers = {"ΧΧ™Χ¨ΧΧ Χ“", "Χ’Χ¨Χ™Χ ΧΧ Χ“", "ΧΧ™Χ΅ΧΧ Χ“"};
+		String correctAnswer = "ΧΧ™Χ¨ΧΧ Χ“";
 		
 		checkQuestion(question, answers, correctAnswer);
 	}
