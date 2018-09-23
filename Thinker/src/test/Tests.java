@@ -2,7 +2,7 @@ package test;
 import org.junit.Assert;
 import org.junit.Test;
 
-import main.Main;
+import think.Thinker;
 
 public class Tests {
 
@@ -210,7 +210,7 @@ public class Tests {
 		
 		String foundAnswer = "";
 		try {
-			foundAnswer = Main.AnswerMeThis(question, possibleAnswers);
+			foundAnswer = Thinker.getInstance().AnswerMeThis(question, possibleAnswers);
 		} catch (Exception e) {
 			e.printStackTrace();
 			hasFailed = true;

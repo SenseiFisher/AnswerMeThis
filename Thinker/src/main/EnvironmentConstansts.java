@@ -3,18 +3,24 @@ package main;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 import java.util.Properties;
 
 public class EnvironmentConstansts {
-	public static String PROJECT_DIR = System.getProperty("user.dir");
 	private static String PROP_FILE_NAME = "application.properties";
+	private static Properties prop =  new Properties();
+	static {
+		initializeProperties();
+	}
 	
 	// Variables to initialize
-	public static String CHARSET = "";
+	public static final String CHARSET = prop.getProperty("charset", "UTF-8");
+	public static final String[] INSIGNIFICANT_WORDS = prop.getProperty("insignificantWords", "").split(",");
+	public static final String[] NEGETIVE_WORDS = prop.getProperty("negativeWords", "").split(",");
+	public static final String[] EARLY_WORDS = prop.getProperty("earlyWords", "").split(",");
+	public static final String[] LATE_WORDS = prop.getProperty("lateWords", "").split(",");
 
-	static {
-		initializeConstants();
-	}
 	
 	// Initialize google api key separately, 
 	// because it cannot be apart of configuration control
@@ -38,15 +44,13 @@ public class EnvironmentConstansts {
 		return googleApiKey;
 	}
 	
-	private static void initializeConstants(){
-		Properties prop = new Properties();
+	private static void initializeProperties(){
 		String fileName = PROP_FILE_NAME;
-		InputStream is = null;
+		InputStream fis = null;
 		try {
-		    is = new FileInputStream(fileName);
-		    prop.load(is);
-		    
-		    CHARSET = prop.getProperty("charset");
+		    fis = new FileInputStream(fileName);
+		    InputStreamReader isr = new InputStreamReader(fis, Charset.forName("UTF-8"));
+		    prop.load(isr);
 		} catch (IOException e) {
 			System.err.println("Could not read propeties file");
 		}

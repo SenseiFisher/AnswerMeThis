@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry excluding="libs/tess_dependencies/|libs/tess_dependencies/|libs/tess_dependencies/|libs/tess/|libs/lib/|libs/tess/|libs/lib/" kind="src" path="src"/>
 	<classpathentry kind="lib" path="src/libs/gson-2.1.jar"/>
 	<classpathentry kind="lib" path="src/libs/jsr305-3.0.2.jar"/>
 	<classpathentry kind="lib" path="src/libs/jsoup-1.11.3.jar"/>
 	<classpathentry kind="lib" path="src/libs/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="src/libs/tess4j-3.4.8.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="src/libs/lib"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
